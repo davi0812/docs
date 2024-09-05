@@ -1,0 +1,53 @@
+---
+title: 'Technical FAQs'
+description: ''
+---
+**Is Infera building its own LLM?**
+* No. Infera is not building its own LLM. Our thesis is that using a mixture of OS LLM models will surpass closed source models such as OpenAI’s GPT-4.
+* Long-term the bottleneck is not access to models but rather scaling them in production as over a models lifetime, inference is 90% of the workload whereas training is only 10%.
+
+**What are the billing units?**
+* Unlike traditional GPU DePIN providers, Infera charges per token not per GPU/hr. Prices would be quoted per thousand or per million tokens.
+* This enables new use cases for decentralized developers who don’t want to scale their own infrastructure for OS LLM inference.
+
+**How do you pay for compute on Infera?**
+* Compute is charged in $INFER tokens, a developer sets the price they are willing to pay per million tokens and the network sources the compute.
+
+**LLMs are non-deterministic, how will Infera prove correctness of a node’s output?**
+* While it is impossible to 100% verify the output of the LLM nodes on the Infera network will be ranked and rated by each other and verification will be probabilistic in nature.
+* Verification will require duplication of work since similar outputs must be independently generated and measured against each other through semantic similarity; new nodes that conform to the output of highly rated nodes will increase their score and receive more $INFER tokens.
+* Nodes are incentivized to increase their score to get more $INFER per token and if they show a decreasing pattern over time they could be at risk of slashing penalties.**
+
+**How does Infera compare to DePIN providers such as Akash?**
+* Infera is not a DePIN network, it is an inference network. Users of the network will not be able to access the underlying operating system or hardware and are restricted to interacting with the network via API or RPC.
+* Developers will not need to provision their own operating systems or containers to receive value from the network. Developers will find huge convenience by using an API without thinking about things like DevOps and scaling.
+* Existing DePIN networks are synergistic to Infera as they can be used to host our node in a decentralized way to bootstrap the Infera network.
+
+**How does a developer access Infera?**
+* Via API, this will be a centralized API Gateway for easy developer access, Infera will be a drop in replacement and compatible with existing OpenAI REST API. Behind the scenes $INFER tokens will be deposited into an escrow contract and usage will be billed from there.
+* An on-chain Oracle will exist for a fully decentralized method of accessing LLM inference, compute times will be slower and cost more but it is verified and on-chain which may be important for some applications.
+* Infera will release an open source python library that integrates with our API. Additionally we plan on partnerships with other tools such as LangChain to directly support access for developers inside familiar tools.
+
+**Will Infera have a developer dashboard?**
+* Yes, Infera will be releasing a developer dashboard in the near future.
+
+**Will latency be an issue?**
+* Network congestion may be an issue as we scale but will be solved as more nodes come online, our incentivization and pricing mechanisms make it ideal for nodes to start operating early.
+* Geographic dispersion of the nodes will cause different latency for users at the beginning. As the geography of nodes is diversified this problem will be solved over time.
+
+**What does the pathway to decentralization look like?**
+* Initially we will launch with nodes owned and operated by the Infera team. This will allow us to test and pivot rapidly during the early phases of development until we have a stable production ready node.
+
+**Will you be open sourcing your node?**
+* Yes our node will be fully open source, we’re big believers in contributing to the OSS community and will do our part.
+
+**Will Infera introduce other AI/ML models?**
+* Infera will deploy other OS LLM models to the nodes via over the air updates. We can support any GGUF models.
+* As a longer-term goal we will support custom fine-tuned models that can be deployed by anyone.
+
+**Does Infera work on all different types of GPUs?**
+* Using a LLM engine under the hood allows our node to be compatible with AMD, Nvidia, and Apple silicon out of the box, it also gives us easy access and a unified API to interact with dozens of OS LLMs.
+
+**Where will LLM model output be stored?**
+* It is largely ephemeral, after the output is verified and returned to the user output will be discarded, it would be a waste of space for the network to store the output beyond the verification period. This prevents the storage issue arising over time and maintains privacy.
+* If this is a desired feature over time, we would consider storing the data on other networks such as FileCoin or similar to off-load this burden from our nodes.

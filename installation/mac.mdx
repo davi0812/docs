@@ -1,0 +1,42 @@
+---
+title: 'Mac Installation'
+description: '(Installation script will be available August 24th 2024)'
+---
+
+**Prerequisites**
+
+Operating System: macOS with Apple Silicon
+
+Dependency: [Ollama](https://ollama.com/) must be installed and running locally.
+
+
+1. **Download the Installation Script:**
+Ensure you have access to the terminal.\
+Download the following installation script into a directory on your machine from our repo.
+2. **Run the Installation Script:**
+Open your terminal and navigate to the directory where the install_node.sh script is saved.\
+Make the script executable by running:
+
+
+```
+chmod +x install_node.sh
+./install_node.sh
+```
+3. **Update Shell Configuration:**
+
+The script will automatically create an alias named init-infera for running the Infera node.
+
+If you are using Zsh, you’ll need to manually add the alias to your ~/.zshrc file with the following:
+
+```
+echo "alias init-infera='~/infera'" >> ~/.zshrc
+source ~/.zshrc
+```
+
+4. **Running Infera Node:**
+
+Once everything is installed with the shell configured, you can start the Infera node by running the following command:
+
+```
+init-infera
+```

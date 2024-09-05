@@ -2,10 +2,10 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Starter Kit",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/images/logoInfera.svg",
+    "light": "/images/logoInfera.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/images/logo.svg",
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
@@ -18,7 +18,7 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:white@infera.org"
     }
   ],
   "topbarCtaButton": {
@@ -29,63 +29,89 @@
     {
       "name": "API Reference",
       "url": "api-reference"
+    },
+    {
+      "name": "InferaSDK",
+      "url": "sdk"
+    },
+    {
+      "name": "Installation",
+      "url": "installation"
     }
   ],
   "anchors": [
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://api.infera.org/docs"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Github",
+      "icon": "github",
+      "url": "https://github.com/inferanetwork"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Twitter",
+      "icon": "twitter",
+      "url": "https://x.com/infera_network"
+    },
+    {
+      "name": "Discord",
+      "icon": "discord",
+      "url": "https://discord.gg/infera"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Welcome",
       "pages": [
         "introduction",
-        "quickstart",
+        "problems",
         "development"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Installation",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "installation/mac",
+        "installation/linux",
+        "installation/windows",
+        "installation/hardware"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "FAQ",
       "pages": [
-        "api-reference/introduction"
+        "faq/token",
+        "faq/roadmap",
+        "faq/economic FAQs",
+        "faq/technical FAQs"
+      ]
+    },
+    {
+      "group": "Infera SDK",
+      "pages": [
+        "sdk/introduction"
       ]
     },
     {
       "group": "Endpoint Examples",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/getAvailableModels",
+        "api-reference/submitJob",
+        "api-reference/getResult"
+      ]
+    },
+    {
+      "group": "Roadmap",
+      "pages": [
+        "roadmap/introduction"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "x": "https://x.com/infera_network",
+    "github": "https://github.com/inferanetwork",
+    "discord": "https://discord.gg/infera"
   }
 }
