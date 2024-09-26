@@ -33,6 +33,10 @@
     {
       "name": "InferaSDK",
       "url": "sdk"
+    },
+    {
+      "name": "Installation",
+      "url": "installation"
     }
   ],
   "anchors": [
@@ -59,43 +63,29 @@
   ],
   "navigation": [
     {
-      "group": "Infera",
+      "group": "Welcome",
       "pages": [
-        "overview",
-        "about",
-        "challenges",
-        "litepaper"
+        "introduction",
+        "problems",
+        "development"
       ]
     },
     {
-      "group": "Infera node",
+      "group": "Installation",
       "pages": [
-        "node/about",
-        {
-          "group": "Infera CLI",
-          "pages": [
-            "node/mac",
-            "node/linux",
-            "node/windows"
-          ]
-        },
-        "node/hardware",
-        "node/docker",
-        "node/requirements"
-      ]
-    },
-    {
-      "group": "Resouces",
-      "pages": [
-        "resources/token",
-        "resources/roadmap"
+        "installation/mac",
+        "installation/linux",
+        "installation/windows",
+        "installation/hardware"
       ]
     },
     {
       "group": "FAQ",
       "pages": [
-        "faq/technical",
-        "faq/economic"
+        "faq/token",
+        "faq/roadmap",
+        "faq/economic FAQs",
+        "faq/technical FAQs"
       ]
     },
     {
@@ -110,6 +100,12 @@
         "api-reference/getAvailableModels",
         "api-reference/submitJob",
         "api-reference/getResult"
+      ]
+    },
+    {
+      "group": "Roadmap",
+      "pages": [
+        "roadmap/introduction"
       ]
     }
   ],
