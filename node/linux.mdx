@@ -1,6 +1,58 @@
 ---
-title: 'Linux Installation'
-description: '(Installation script will be available August 24th 2024)'
+title: 'Linux '
+description: 
 ---
 
-*Coming soon*
+### Prerequisites
+Ensure [Ollama](https://ollama.com/) is installed and running locally. You can download it from [here](https://ollama.com/download).
+
+---
+### Step 1: Open Your Terminal
+
+Open the **Terminal** application on your Linux system. You can usually find it in your applications menu or by pressing `Ctrl + Alt + T`.
+
+---
+
+### Step 2: Download the Installation Script
+<br />
+**For Linux with Intel** 
+
+```bash
+sh -c "$(curl -sSL https://www.infera.org/scripts/infera-linux-intel.sh)"
+```
+
+**For Linux with AMD** 
+
+```bash
+sh -c "$(curl -sSL https://www.infera.org/scripts/infera-linux-amd.sh)"
+```
+
+---
+
+### Step 3: Running Infera Node
+
+After installing, run the following command to start your Infera node:
+```bash
+init-infera
+```
+
+---
+
+### Step 4: Verify your node is running
+
+If your node is running correctly, your terminal will display a message like this:
+
+![Verify](/images/verify.png)
+
+---
+
+### Troubleshooting
+
+- If the installation script fails, ensure your internet connection is active.
+- Make sure you have the latest version of Ollama running before starting the Infera node.
+
+---
+
+### Need Help?
+
+If you have any questions or encounter any issues, join our [Discord Community](https://discord.com/invite/infera) for assistance.

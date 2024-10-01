@@ -1,6 +1,29 @@
 ---
 title: 'Docker Setup'
-description: 'Docker'
+description: 
 ---
 
-HERE THE ABOUT
+### Prerequisites
+Before you begin, ensure Docker is installed on your machine. If Docker is not installed, you can follow the official Docker installation guide [here](https://www.docker.com/).
+
+### Step 1: Pull the Infera Docker Image
+To install the Infera Docker image, use the following command in your terminal:
+
+```bash
+docker pull infera/infera_node
+```
+
+### Step 2: Run Infera Worker Instances
+Once the image has been pulled, you can run your Infera worker instance using the following command:
+
+```bash
+docker run -d \
+  --name worker_api \
+  --restart always \
+  -p 11025:11025 \
+  -e API_GATEWAY_URL=https://api.infera.org \
+  -e OLLAMA_HOST=http://host.docker.internal:11434 \
+  infera/infera_node:latest
+```
+
+**Note: Points generated from the CLI version will not be transferred to the Docker instance of the node.**

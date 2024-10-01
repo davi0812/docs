@@ -2,28 +2,28 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Starter Kit",
   "logo": {
-    "dark": "/images/logoInfera.svg",
-    "light": "/images/logoInfera.svg"
+    "dark": "/images/Infera-White.png",
+    "light": "/images/Infera-Black.png"
   },
   "favicon": "/images/logo.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#F7B42B",
+    "light": "#F7B42B",
+    "dark": "#F7B42B",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#F7B42B",
+      "to": "#F7B42B"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:white@infera.org"
+      "url": "https://discord.com/invite/infera"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Run a node",
+    "url": "https://infera.org"
   },
   "tabs": [
     {
@@ -31,7 +31,7 @@
       "url": "api-reference"
     },
     {
-      "name": "InferaSDK",
+      "name": "Infera SDK",
       "url": "sdk"
     }
   ],
@@ -79,9 +79,9 @@
             "node/windows"
           ]
         },
-        "node/hardware",
+        "node/requirements",
         "node/docker",
-        "node/requirements"
+        "node/hardware"
       ]
     },
     {
